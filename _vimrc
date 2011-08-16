@@ -5,7 +5,8 @@ set number                       " 行番号表示
 set nobackup                     " backup不要
 set autoread                     " 他で書き換えられたら自動で再読み込み
 set whichwrap=b,s,h,l,<,>,[,]    " カーソルを行頭、行末で止まらないようにする
-syntax enable
+syntax enable                    " 色をつける
+set notitle                      " タイトルを表示しない
 
 "======================
 " setting for vundle
