@@ -12,6 +12,8 @@ Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
 Bundle 'thinca/vim-ref'
+Bundle 'vim-scripts/IndentAnything'
+Bundle 'vim-scripts/JavaScript-Indent'
 
 filetype plugin indent on 
 
@@ -54,3 +56,11 @@ function InsertTabWrapper()
   endif
 endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+
+"=============================
+" javascript setting
+"=============================
+"tab幅設定 など
+au FileType javascript set ts=2 sw=2 expandtab
+au BufNewFile *.js set ft=javascript fenc=utf-8
+
