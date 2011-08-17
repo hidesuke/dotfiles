@@ -12,8 +12,10 @@ Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
 Bundle 'thinca/vim-ref'
+Bundle 'motemen/git-vim'
 Bundle 'vim-scripts/IndentAnything'
 Bundle 'vim-scripts/JavaScript-Indent'
+Bundle 'vim-scripts/JSON.vim'
 
 filetype plugin indent on 
 
@@ -22,7 +24,7 @@ filetype plugin indent on
 "==================
 set number                       " 行番号表示
 set nobackup                     " backup不要
-set textwidth=0                  " 折り返さない
+set nowrap                       " 折り返さない
 set noswapfile                   " スワップファイルなんていらない
 set autoread                     " 他で書き換えられたら自動で再読み込み
 set whichwrap=b,s,h,l,<,>,[,]    " カーソルを行頭、行末で止まらないようにする
@@ -63,4 +65,10 @@ inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 "tab幅設定 など
 au FileType javascript set ts=2 sw=2 expandtab
 au BufNewFile *.js set ft=javascript fenc=utf-8
+
+"============================
+" json setting
+"============================
+au! BufRead,BufNewFile *.json set filetype=json foldmethod=syntax
+
 
