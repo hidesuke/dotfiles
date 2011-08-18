@@ -16,6 +16,8 @@ Bundle 'motemen/git-vim'
 Bundle 'vim-scripts/IndentAnything'
 Bundle 'vim-scripts/JavaScript-Indent'
 Bundle 'vim-scripts/JSON.vim'
+Bundle 'vim-scripts/grep.vim'
+Bundle 'pix/vim-align'
 
 filetype plugin indent on 
 
