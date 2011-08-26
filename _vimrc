@@ -8,14 +8,13 @@ set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
 " plug-ins
-Bundle 'gmarik/vundle'
+" Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler'
 Bundle 'thinca/vim-ref'
 Bundle 'motemen/git-vim'
 Bundle 'vim-scripts/IndentAnything'
-Bundle 'vim-scripts/JavaScript-Indent'
 Bundle 'vim-scripts/JSON.vim'
 Bundle 'vim-scripts/grep.vim'
 Bundle 'pix/vim-align'
@@ -81,5 +80,6 @@ au! BufRead,BufNewFile *.json set filetype=json foldmethod=syntax
 "============================
 " VimFiler setting
 "============================
-let g:vimfiler_as_default_explorer = 1 " VimFilerをデフォルトのExploreに (netrwを無効化)
+" VimFilerをデフォルトのExploreに (netrwを無効化)
+let g:vimfiler_as_default_explorer = 1
 
