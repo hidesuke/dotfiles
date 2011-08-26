@@ -2,8 +2,8 @@
 " setting for vundle
 "======================
 set nocompatible
-filetype off
 
+filetype off
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
@@ -35,8 +35,6 @@ set showcmd                   " コマンドをステータス行に表示
 set showmode                  " 現在のモードを表示
 set laststatus=2              " 常にステータスラインを表示
 set showmatch                 " カッコの対応をハイライト
-set autoindent                " 自動でインデント
-set paste                     " ペースト時にautoindentをoff
 
 syntax enable                 " 色をつける
 
