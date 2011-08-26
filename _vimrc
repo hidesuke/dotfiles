@@ -78,4 +78,8 @@ au BufNewFile *.js set ft=javascript fenc=utf-8
 "============================
 au! BufRead,BufNewFile *.json set filetype=json foldmethod=syntax
 
+"============================
+" VimFiler setting
+"============================
+let g:vimfiler_as_default_explorer = 1 " VimFilerをデフォルトのExploreに (netrwを無効化)
 
