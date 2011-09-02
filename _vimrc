@@ -40,6 +40,7 @@ set expandtab                 " タブはスペースに変換
 set tabstop=2                 " ファイル中の<tab>文字を空白いくつで表現するか
 set softtabstop=2             " キーボードで<tab>を打ったときの空白数
 set shiftwidth=2              " 自動挿入されるタブの空白数
+set ruler                     " カーソルが何行目に置かれてるか
 
 syntax enable                 " 色をつける
 
