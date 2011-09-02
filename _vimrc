@@ -27,7 +27,7 @@ filetype plugin indent on
 "==================
 set number                    " 行番号表示
 set nobackup                  " backup不要
-set nowrap                    " 折り返さない
+set textwidth=0               " 一行に長い文章を書いても自動で折り返さない
 set noswapfile                " スワップファイルなんていらない
 set autoread                  " 他で書き換えられたら自動で再読み込み
 set whichwrap=b,s,h,l,<,>,[,] " カーソルを行頭、行末で止まらないようにする
