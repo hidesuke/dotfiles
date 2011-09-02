@@ -63,20 +63,7 @@ augroup END
 let g:neocomplcache_enable_at_startup = 1 
 
 " tabで補完
-function InsertTabWrapper()
-  if pumvisible()
-    return "\<c-n>"
-  endif
-  let col = col('.') - 1
-  if !col || getline('.')[col - 1] !~ '\k\|<\|/'
-    return "\<tab>"
-  elseif exists('&omnifunc') && &omnifunc == ''
-    return "\<c-n>"
-  else
-    return "\<c-x>\<c-o>"
-  endif
-endfunction
-inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 "=============================
 " javascript setting
