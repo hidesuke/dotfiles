@@ -56,6 +56,10 @@ augroup cch
   autocmd WinEnter,BufRead * set cursorline
 augroup END
 
+" Ev/Rvでvimrcの編集と反映
+command! Ev edit $MYVIMRC
+command! Rv source $MYVIMRC
+
 "===========================
 " neocomplcache
 "===========================
