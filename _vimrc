@@ -36,6 +36,10 @@ set showcmd                   " コマンドをステータス行に表示
 set showmode                  " 現在のモードを表示
 set laststatus=2              " 常にステータスラインを表示
 set showmatch                 " カッコの対応をハイライト
+set expandtab                 " タブはスペースに変換
+set tabstop=2                 " ファイル中の<tab>文字を空白いくつで表現するか
+set softtabstop=2             " キーボードで<tab>を打ったときの空白数
+set shiftwidth=2              " 自動挿入されるタブの空白数
 
 syntax enable                 " 色をつける
 
