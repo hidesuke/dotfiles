@@ -18,6 +18,7 @@ Bundle 'vim-scripts/IndentAnything'
 Bundle 'vim-scripts/JSON.vim'
 Bundle 'vim-scripts/grep.vim'
 Bundle 'pix/vim-align'
+Bundle 'scrooloose/nerdcommenter'
 
 filetype plugin indent on 
 
