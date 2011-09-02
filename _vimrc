@@ -46,6 +46,15 @@ syntax enable                 " 色をつける
 " ファイルタイプ判定をon
 filetype plugin on
 
+" カーソル行をハイライト
+set cursorline
+" カレントウィンドウのみに罫線をひく
+augroup cch
+  autocmd! cch
+  autocmd WinLeave * set nocursorline
+  autocmd WinEnter,BufRead * set cursorline
+augroup END
+
 "===========================
 " neocomplcache
 "===========================
