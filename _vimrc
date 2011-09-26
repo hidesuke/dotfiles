@@ -8,7 +8,7 @@ set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
 " plug-ins
-" Bundle 'gmarik/vundle'
+Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler'
