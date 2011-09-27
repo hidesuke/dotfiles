@@ -20,6 +20,7 @@ Bundle 'vim-scripts/grep.vim'
 Bundle 'pix/vim-align'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'othree/html5.vim'
+Bundle 'mattn/calendar-vim'
 
 filetype plugin indent on 
 
