@@ -8,7 +8,7 @@ set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
 " plug-ins
-Bundle 'gmarik/vundle'
+" Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler'
@@ -21,6 +21,7 @@ Bundle 'pix/vim-align'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'othree/html5.vim'
 Bundle 'mattn/calendar-vim'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 filetype plugin indent on 
 
