@@ -21,7 +21,6 @@ Bundle 'pix/vim-align'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'othree/html5.vim'
 Bundle 'mattn/calendar-vim'
-Bundle 'nathanaelkane/vim-indent-guides'
 
 filetype plugin indent on 
 
