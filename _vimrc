@@ -71,6 +71,9 @@ let g:neocomplcache_enable_at_startup = 1
 " tabで補完
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
+" uniteと連携
+imap <C-k> <Plug>(neocomplcache_start_unite_complete)
+
 "=============================
 " javascript setting
 "=============================
@@ -88,4 +91,10 @@ au! BufRead,BufNewFile *.json set filetype=json foldmethod=syntax
 "============================
 " VimFilerをデフォルトのExploreに (netrwを無効化)
 let g:vimfiler_as_default_explorer = 1
+
+"============================
+" Align setting
+"============================
+let g:Align_xstrlen = 3     " for Japanese string
+let g:DrChipTopLvlMenu = '' "remove 'DrChip' menu
 
