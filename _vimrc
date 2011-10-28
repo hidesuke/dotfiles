@@ -13,6 +13,7 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler'
 Bundle 'thinca/vim-ref'
+Bundle 'thinca/vim-quickrun'
 Bundle 'motemen/git-vim'
 Bundle 'vim-scripts/IndentAnything'
 Bundle 'vim-scripts/JSON.vim'
@@ -23,7 +24,6 @@ Bundle 'othree/html5.vim'
 Bundle 'mattn/calendar-vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
-
 
 filetype plugin indent on 
 
