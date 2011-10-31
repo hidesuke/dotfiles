@@ -24,6 +24,7 @@ Bundle 'othree/html5.vim'
 Bundle 'mattn/calendar-vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
+Bundle 'kchmck/vim-coffee-script'
 
 filetype plugin indent on 
 
@@ -100,4 +101,9 @@ let g:vimfiler_as_default_explorer = 1
 "============================
 let g:Align_xstrlen = 3     " for Japanese string
 let g:DrChipTopLvlMenu = '' "remove 'DrChip' menu
+
+"============================
+" express setting
+"============================
+au BufRead,BufNewFile *.ejs set filetype=html fenc=utf-8 foldmethod=syntax
 
