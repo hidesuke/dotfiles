@@ -79,6 +79,26 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 imap <C-k> <Plug>(neocomplcache_start_unite_complete)
 
 "=============================
+" Unite setting
+"=============================
+" バッファ一覧
+nnoremap <silent> :ub :<C-u>Unite buffer<CR>
+" ファイル一覧
+nnoremap <silent> :uf :<C-u>Unite file<CR>
+" 最近使用したファイル一覧 MostRecentUse
+nnoremap <silent> :um :<C-u>Unite file_mru<CR>
+" レジスタ一覧
+nnoremap <silent> :ur :<C-u>Unite -buffer-name=register register<CR>
+
+" unite.vim上でのキーマッピング
+autocmd FileType unite call s:unite_my_settings()
+function! s:unite_my_settings()
+  "ESC 2回押しで終了
+  nmap <silent><buffer> <ESC><ESC> q
+  imap <silent><buffer> <ESC><ESC> q
+endfunction
+
+"=============================
 " javascript setting
 "=============================
 "tab幅設定 など
