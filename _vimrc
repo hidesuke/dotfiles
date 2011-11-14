@@ -82,13 +82,13 @@ imap <C-k> <Plug>(neocomplcache_start_unite_complete)
 " Unite setting
 "=============================
 " バッファ一覧
-nnoremap <silent> :ub :<C-u>Unite buffer<CR>
+nnoremap <silent> :ub<CR> :<C-u>Unite buffer<CR>
 " ファイル一覧
-nnoremap <silent> :uf :<C-u>Unite file<CR>
+nnoremap <silent> :uf<CR> :<C-u>Unite file<CR>
 " 最近使用したファイル一覧 MostRecentUse
-nnoremap <silent> :um :<C-u>Unite file_mru<CR>
+nnoremap <silent> :um<CR> :<C-u>Unite file_mru<CR>
 " レジスタ一覧
-nnoremap <silent> :ur :<C-u>Unite -buffer-name=register register<CR>
+nnoremap <silent> :ur<CR> :<C-u>Unite -buffer-name=register register<CR>
 
 " unite.vim上でのキーマッピング
 autocmd FileType unite call s:unite_my_settings()
