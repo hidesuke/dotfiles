@@ -127,3 +127,8 @@ let g:DrChipTopLvlMenu = '' "remove 'DrChip' menu
 "============================
 au BufRead,BufNewFile *.ejs set filetype=html fenc=utf-8 foldmethod=syntax
 
+"============================
+" CoffeeScript setting
+"============================
+autocmd BufWritePost *.coffee silent CoffeeMake! -cb | cwindow | redraw!
+
