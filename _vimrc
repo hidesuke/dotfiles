@@ -25,6 +25,7 @@ Bundle 'mattn/calendar-vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'mattn/zencoding-vim'
 
 filetype plugin indent on 
 
