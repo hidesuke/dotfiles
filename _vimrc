@@ -72,12 +72,13 @@ command! Rv source $MYVIMRC
 "===========================
 " 起動時に有効化
 let g:neocomplcache_enable_at_startup = 1 
-
 " tabで補完
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-
 " uniteと連携
 imap <C-k> <Plug>(neocomplcache_start_unite_complete)
+" snippets を使えるように
+imap <C-k> <Plug>(neocomplcache_snippets_expand)
+smap <C-k> <Plug>(neocomplcache_snippets_expand)
 
 "=============================
 " Unite setting
@@ -132,4 +133,10 @@ au BufRead,BufNewFile *.ejs set filetype=html fenc=utf-8 foldmethod=syntax
 " CoffeeScript setting
 "============================
 autocmd BufWritePost *.coffee silent CoffeeMake! -cb | cwindow | redraw!
+
+"============================
+" zencoding setting
+"============================
+let g:user_zen_settings = { 'indentation':'  '}
+
 
