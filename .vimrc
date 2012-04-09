@@ -26,6 +26,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'mattn/zencoding-vim'
+Bundle 'jelera/vim-javascript-syntax'
 
 filetype plugin indent on 
 
