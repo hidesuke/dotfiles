@@ -93,14 +93,6 @@ nnoremap <silent> :um<CR> :<C-u>Unite file_mru<CR>
 " レジスタ一覧
 nnoremap <silent> :ur<CR> :<C-u>Unite -buffer-name=register register<CR>
 
-" unite.vim上でのキーマッピング
-autocmd FileType unite call s:unite_my_settings()
-function! s:unite_my_settings()
-  "ESC 2回押しで終了
-  nmap <silent><buffer> <ESC><ESC> q
-  imap <silent><buffer> <ESC><ESC> q
-endfunction
-
 "=============================
 " javascript setting
 "=============================
