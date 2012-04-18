@@ -1,3 +1,9 @@
+# .bashrcの読み込み
+# githubに上げるべきで無い設定は .bashrcに書く
+if [ -f ~/.bashrc ] ; then
+  . ~/.bashrc
+fi
+
 # MacVim 設定
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
