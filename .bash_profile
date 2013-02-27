@@ -20,6 +20,11 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 
 export VIM=/Home/hideuske/.vim
 
+# bashのヒストリをダイエットする設定
+# ignorespace(スペースで始まるコマンドを記録しない) + ignoredups (重複したコマンドを記録しない) 
+export HISTCONTROL=ignoreboth 
+export HISTIGNORE=":history*:cd*:ls*"
+
 alias less='less -M'
 
 # rbenv用設定
