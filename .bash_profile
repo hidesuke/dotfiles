@@ -20,3 +20,14 @@ export VIM=/Home/hideuske/.vim
 alias less='less -M'
 
 
+# 自動で追加された以下のスクリプトは.bashrcに移動
+# eval "$(rbenv init -)"
+
+# {{{
+# Node Completion - Auto-generated, do not touch.
+# shopt -s progcomp
+# for f in $(command ls ~/.node-completion); do
+#   f="$HOME/.node-completion/$f"
+#   test -f "$f" && . "$f"
+# done
+# }}}
