@@ -1,7 +1,7 @@
 hidesuke の dotfiles
 ====================
 
-site : http://d.hatena.ne.jp/hidesuke/ ,  http://please.shachiku.me/
+site : http://que.hateblo.jp/ ,  http://please.shachiku.me/
 
 概要
 ----
