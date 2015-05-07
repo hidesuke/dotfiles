@@ -18,6 +18,9 @@ alias ls='ls -G'
 alias ll='ls -hl'
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
+IT_PS1_SHOWDIRTYSTATE=true
+export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[35m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ '
+
 export VIM=/Home/hideuske/.vim
 
 # bashのヒストリをダイエットする設定
@@ -28,7 +31,7 @@ export HISTIGNORE=":history*:cd*:ls*"
 alias less='less -M'
 
 # rbenv用設定
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 
 # 自動で追加された以下のスクリプトは.bashrcに移動
@@ -42,3 +45,5 @@ eval "$(rbenv init -)"
 #   test -f "$f" && . "$f"
 # done
 # }}}
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
