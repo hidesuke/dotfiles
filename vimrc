@@ -17,9 +17,19 @@ call dein#add('Shougo/dein.vim')
 " Add or remove your plugins here:
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
+call dein#add('Shougo/unite.vim')
+call dein#add('Shougo/neocomplcache.vim')
+call dein#add('Shougo/vimfiler.vim')
+call dein#add('tpope/vim-surround')
+call dein#add('vim-scripts/Align')
+call dein#add('itchyny/lightline.vim')
+
+
+" Python settings
+call dein#add('davidhalter/jedi-vim', {'on_ft':['py']})
 
 " You can specify revision/branch/tag.
-call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+" call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
 
 " Required:
 call dein#end()
@@ -34,6 +44,13 @@ endif
 
 "End dein Scripts-------------------------
 
+" enabel neocomplecache on start up
+let g:neocomplcache_enable_at_startup = 1
+
+" lightline setting
+if !has('gui_running')
+  set t_Co=256
+endif
 
 "==================
 " 基本設定
@@ -54,6 +71,10 @@ set tabstop=2                 " ファイル中の<tab>文字を空白いくつ�
 set softtabstop=2             " キーボードで<tab>を打ったときの空白数
 set shiftwidth=2              " 自動挿入されるタブの空白数
 set ruler                     " カーソルが何行目に置かれてるか
+set backspace=indent,eol,start
+set list
+set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%,eol:↲
+
 
 syntax enable                 " 色をつける
 

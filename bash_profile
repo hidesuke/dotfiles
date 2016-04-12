@@ -13,7 +13,8 @@ alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
 # iTerm2でlsコマンドに色付け
-export TERM=xterm-color
+#export TERM=xterm-color
+export TERM=xterm-256color
 alias ls='ls -G'
 alias ll='ls -ahl'
 export LSCOLORS=gxfxcxdxbxegedabagacad
