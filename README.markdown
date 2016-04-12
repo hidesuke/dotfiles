@@ -7,20 +7,20 @@ site : http://que.hateblo.jp/ ,  http://please.shachiku.me/
 ----
 
 * hidesukeのdotfilesです。
-* 主に macvim-kaoriya 用の設定ファイルが置いてあります。
+* vimのプラグイン管理は dein.vimを使うぞー https://github.com/Shougo/dein.vim
 
-使い方
+Setup
 ------
 
 1. ホームディレクトリで git clone git@github.com:hidesuke/dotfiles.git
-2. cd ~/dotfiles
-3. git submodule init
-4. git submodule update
-5. cd ~/
-6. ln -s ~/dotfiles/.vimrc .vimrc
-7. ln -s ~/dotfiles/vimfiles .vim
-8. vimを立ち上げる
-9. :BundleInstall と打つとplug-inが降ってくる
+1. cd ~/dotfiles
+1. cd ~/
+1. ln -s ~/dotfiles/.vimrc .vimrc
+1. ln -s ~/dotfiles/vimfiles .vim
+  1. dein.vimを入れる https://github.com/Shougo/dein.vim
+  1. installer.sh に渡す引数は `~/dotfiles/vimfiles/dein`
+
+
 
 さいごに
 --------
