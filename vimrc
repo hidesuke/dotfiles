@@ -18,12 +18,19 @@ call dein#add('Shougo/dein.vim')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
 call dein#add('Shougo/unite.vim')
+call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/neocomplcache.vim')
 call dein#add('Shougo/vimfiler.vim')
 call dein#add('tpope/vim-surround')
 call dein#add('vim-scripts/Align')
 call dein#add('itchyny/lightline.vim')
 
+" html settings
+call dein#add('mattn/emmet-vim', {'on_ft': ['html']})
+
+" js settings
+call dein#add('othree/javascript-libraries-syntax.vim', {'on_ft':['js']})
+call dein#add('othree/yajs.vim', {'on_ft':['js']})
 
 " Python settings
 call dein#add('davidhalter/jedi-vim', {'on_ft':['py']})
@@ -44,8 +51,9 @@ endif
 
 "End dein Scripts-------------------------
 
-" enabel neocomplecache on start up
+" neocomplcache settings
 let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
 
 " lightline setting
 if !has('gui_running')
@@ -55,6 +63,8 @@ endif
 "==================
 " 基本設定
 "==================
+let mapleader = "\<Space>"
+
 set number                    " 行番号表示
 set nobackup                  " backup不要
 set textwidth=0               " 一行に長い文章を書いても自動で折り返さない
@@ -64,6 +74,7 @@ set whichwrap=b,s,h,l,<,>,[,] " カーソルを行頭、行末で止まらない
 set notitle                   " タイトルを表示しない
 set showcmd                   " コマンドをステータス行に表示
 set showmode                  " 現在のモードを表示
+
 set laststatus=2              " 常にステータスラインを表示
 set showmatch                 " カッコの対応をハイライト
 set expandtab                 " タブはスペースに変換
@@ -75,8 +86,23 @@ set backspace=indent,eol,start
 set list
 set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%,eol:↲
 
-
 syntax enable                 " 色をつける
+
+" 分割画面移動をtmux風にしたい
+" 分割画面間の移動
+nnoremap <C-b>j <C-w>j
+nnoremap <C-b>k <C-w>k
+nnoremap <C-b>l <C-w>l
+nnoremap <C-b>h <C-w>h
+" 分割画面の入れ替え
+nnoremap <C-b>J <C-w>J
+nnoremap <C-b>K <C-w>K
+nnoremap <C-b>L <C-w>L
+nnoremap <C-b>H <C-w>H
+" tab間の移動
+nnoremap <C-b>p gT
+nnoremap <C-b>n gt
+
 
 " ファイルタイプ判定をon
 filetype plugin on
