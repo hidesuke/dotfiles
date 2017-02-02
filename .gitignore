@@ -1,1 +1,2 @@
-/vimfiles/dein/
+vimfiles/*
+!.gitkeep
