@@ -4,6 +4,9 @@ if [ -f ~/.bashrc ] ; then
   . ~/.bashrc
 fi
 
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+source /usr/local/etc/bash_completion.d/git-completion.bash
+
 # iTerm2 でタブに書かれる文字列の設定
 PROMPT_COMMAND='echo -ne "\033]0;${HOSTNAME%%.*}:${PWD/$HOME/~}\007"'
 
