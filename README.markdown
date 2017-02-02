@@ -28,6 +28,15 @@ Setup
   1. dein.vimを入れる https://github.com/Shougo/dein.vim
   1. installer.sh に渡す引数は `~/dotfiles/vimfiles/dein`
 
+その他
+-----
+
+* Macのスクリーンショットの保存先の変更 http://pc-karuma.net/mac-customize-screencapture-location/
+
+```bash
+$ defaults write com.apple.screencapture location ~/Pictures/screenshots
+$ killall SystemUIServer
+```
 
 
 さいごに
