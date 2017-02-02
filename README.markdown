@@ -12,9 +12,10 @@ site : http://que.hateblo.jp/ ,  http://please.shachiku.me/
 前提条件
 -------
 
-* brew が入ってる
+* [iTerm2](http://www.iterm2.com) がはいってる
+* [brew](http://brew.sh/index_ja.html) が入ってる
 * git が入ってる
-* mac-vim-kaoriyaが入ってる
+* [mac-vim-kaoriya](https://github.com/splhack/macvim-kaoriya)が入ってる
 
 Setup
 ------
