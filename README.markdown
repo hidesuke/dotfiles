@@ -23,7 +23,7 @@ Setup
 1. ホームディレクトリで git clone git@github.com:hidesuke/dotfiles.git
 1. cd ~/dotfiles
 1. cd ~/
-1. ln -s ~/dotfiles/bashrc .bashr # for max os X
+1. cp ~/dotfiles/bash_profile .bash_profile # for max os X
 1. ln -s ~/dotfiles/bashrc .bashrc
 1. ln -s ~/dotfiles/vimrc .vimrc
 1. ln -s ~/dotfiles/vimfiles .vim
@@ -40,6 +40,7 @@ $ defaults write com.apple.screencapture location ~/Pictures/screenshots
 $ killall SystemUIServer
 ```
 
++ バージョン管理はつべこべ言わずに [anyenv](https://github.com/anyenv/anyenv)つかっとけ
 
 さいごに
 --------
