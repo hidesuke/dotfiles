@@ -23,7 +23,7 @@ Setup
 1. ホームディレクトリで git clone git@github.com:hidesuke/dotfiles.git
 1. cd ~/dotfiles
 1. cd ~/
-1. ln -s ~/dotfiles/bash_profile .bash_profile
+1. ln -s ~/dotfiles/bashrc .bashrc
 1. ln -s ~/dotfiles/vimrc .vimrc
 1. ln -s ~/dotfiles/vimfiles .vim
   1. dein.vimを入れる https://github.com/Shougo/dein.vim
