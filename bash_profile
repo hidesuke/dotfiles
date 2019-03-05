@@ -1,9 +1,3 @@
-# .bashrcの読み込み
-# githubに上げるべきで無い設定は .bashrcに書く
-if [ -f ~/.bashrc ] ; then
-  . ~/.bashrc
-fi
-
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
@@ -33,21 +27,3 @@ export HISTCONTROL=ignoreboth
 export HISTIGNORE=":history*:cd*:ls*"
 
 alias less='less -M'
-
-# rbenv用設定
-# eval "$(rbenv init -)"
-
-
-# 自動で追加された以下のスクリプトは.bashrcに移動
-# eval "$(rbenv init -)"
-
-# {{{
-# Node Completion - Auto-generated, do not touch.
-# shopt -s progcomp
-# for f in $(command ls ~/.node-completion); do
-#   f="$HOME/.node-completion/$f"
-#   test -f "$f" && . "$f"
-# done
-# }}}
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
