@@ -18,6 +18,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 
 IT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[35m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ '
+export PS1='\[\033[32m\][ ● ▲ ● ]\[\033[00m\]:\[\033[35m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ '
 
 export VIM=/Home/hideuske/.vim
 
