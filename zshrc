@@ -8,6 +8,7 @@ fi
 
 # zsh autosuggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# zsh syntax high light
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # iTerm2でlsコマンドに色付け
