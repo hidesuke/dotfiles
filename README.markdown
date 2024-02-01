@@ -7,7 +7,6 @@ site : http://que.hateblo.jp/ ,  http://please.shachiku.me/
 ----
 
 * hidesukeのdotfilesです。
-* vimのプラグイン管理は dein.vimを使うぞー https://github.com/Shougo/dein.vim
 
 前提条件
 -------
