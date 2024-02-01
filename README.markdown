@@ -12,7 +12,7 @@ site : http://que.hateblo.jp/ ,  http://please.shachiku.me/
 -------
 
 * [iTerm2](http://www.iterm2.com) がはいってる
-* [brew](http://brew.sh/index_ja.html) が入ってる
+* [brew](http://brew.sh/) が入ってる
 * git が入ってる
 
 Setup
@@ -22,6 +22,16 @@ Setup
 1. cd ~/dotfiles
 1. cd ~/
 1. ln -s ~/dotfiles/zshrc .zshrc
+
+1. zshの補完機能をいれる
+
+```
+% brew install zsh-completions
+% chmod go-w '/opt/homebrew/share'
+% chmod -R go-w '/opt/homebrew/share/zsh'
+% brew install zsh-autosuggestions
+% brew install zsh-syntax-highlighting
+```
 
 その他
 -----
