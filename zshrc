@@ -1,6 +1,3 @@
-# prompt設定
-export PS1="%n %~ "$'\n'" %# "
-
 # zsh補完機能
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
@@ -22,3 +19,15 @@ export TERM=xterm-256color
 alias ls='ls -G'
 alias ll='ls -ahl'
 export LSCOLORS=gxfxcxdxbxegedabagacad
+
+# git周り
+autoload -Uz compinit && compinit
+autoload -Uz vcs_info
+setopt prompt_subst
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
+zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+PROMPT='%n %~ '\$vcs_info_msg_0_' '$'\n''%# '
+precmd(){ vcs_info }
